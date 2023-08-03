@@ -31,7 +31,10 @@ export const Home = () => {
                 let's <br className="xl: block hidden" /> do it.
               </h1>
             </motion.div>
-            <motion.div {...headTextAnimation} className="flex flex-col gap-5">
+            <motion.div
+              {...headContentAnimation}
+              className="flex flex-col gap-5"
+            >
               <p className="max-w-md font-normal text-gray-600 tex-base">
                 Create your unique and exclusive shirt with our brand-new 3d
                 customization tool. <strong>Unleash your imagination</strong>{" "}
@@ -40,8 +43,8 @@ export const Home = () => {
 
               <CustomButton
                 type="filled"
-                title="Customixe It"
-                handle={() => (state.intro = false)}
+                title="Customize It"
+                handleClick={() => (state.intro = false)}
                 customStyles="w-fit px-4 py-2.5 font-bold text-sm"
               />
             </motion.div>
